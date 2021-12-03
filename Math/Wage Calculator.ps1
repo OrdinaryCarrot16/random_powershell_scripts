@@ -9,7 +9,7 @@ Write-Host "Let's calculate your daily, weekly, monthly, and yearly wage."
 Write-Host
 
 [decimal]$daily= $hourly_pay * $hours
-[decimal]$weekly= [int]$days * [decimal]$daily
+[decimal]$weekly= $days * $daily
 [int]$monthly= ($days * 4.3) * $daily
 [int]$yearly= ($days * 52) * $daily
 
