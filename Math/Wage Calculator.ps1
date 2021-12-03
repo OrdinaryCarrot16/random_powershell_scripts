@@ -2,6 +2,7 @@
 # Tax amount owed based by state and conditions
 
 Write-Host "Let's calculate your daily, weekly, monthly, and yearly wage."
+Write-Host
 
 [decimal]$hourly_pay= Read-Host -Prompt "What is your hourly pay (no cash symbols)"
 [decimal]$hours= Read-Host -Prompt "How many hours do you work (per day, use decimal for minutes)"
