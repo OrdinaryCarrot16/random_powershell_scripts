@@ -1,4 +1,4 @@
-[decimal]$in_value= Read-Host -Prompt "Enter the number you want to find the percentage of (use period for decimal)"
+[decimal]$in_value= Read-Host -Prompt "Enter the number you want to find the percental value of (use period for decimal)"
 [decimal]$percent= Read-Host -Prompt "Enter the percentage you want to use (0-100, no symbols)"
 [decimal]$out_value= ($in_value * $percent) / 100
 [decimal]$percent_remaining=(100 - $percent)
