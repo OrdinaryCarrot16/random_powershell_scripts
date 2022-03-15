@@ -1,6 +1,3 @@
-# Features to add:
-# Tax amount owed based by state and conditions
-
 Write-Host "Let's calculate your daily, weekly, monthly, and yearly wage."
 Write-Host
 
