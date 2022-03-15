@@ -6,7 +6,7 @@ Write-Host
 
 Write-Host "Percentage: ($in_value * $percent) / 100 = $out_value"
 [decimal]$out_value= ($in_value * $percent_remaining) / 100
-Write-Host "Remaining Percentage (100 - $percent = $percent_remaining%): ($in_value * $percent_remaining) = $out_value"
+Write-Host "Remaining Percentage (100 - $percent = $percent_remaining%): ($in_value * $percent_remaining) / 100 = $out_value"
 Write-Host
 
 pause
