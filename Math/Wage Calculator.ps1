@@ -13,22 +13,18 @@ Write-Host
 
 
 Write-Host "Daily pay: $" $daily
-# Write-Host "Daily pay (after taxes): $" $daily
 Write-Host "$hourly_pay * $hours = $daily"
 Write-Host
 
 Write-Host "Weekly pay: $" $weekly
-# Write-Host "Weekly pay (after taxes): $" $weekly
 Write-Host "$days * $daily = $weekly"
 Write-Host
 
 Write-Host "Monthly pay (slightly inaccurate): $" $monthly
-# Write-Host "Monthly pay (slightly inaccurate) (after taxes): $" $monthly
 Write-Host "($days * 4.3) * $daily = $monthly"
 Write-Host
 
 Write-Host "Yearly/Annual pay: $" $yearly 
-# Write-Host "Yearly/Annual pay (after taxes): $" $yearly 
 Write-Host "($days * 52) * $daily = $yearly"
 Write-Host
 
