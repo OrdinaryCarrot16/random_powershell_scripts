@@ -4,7 +4,7 @@ $cha_itm_loc=Read-Host -Prompt "Are you writing a dictionary entry for a charact
 
 if ($cha_itm_loc -eq 'character') {
     $cha_name=Read-Host -Prompt "Enter the name of the character"
-    $cha_gender=Read-Host -Prompt "Enter the gender of $cha_name (example: male, female, or genderless (robot))"
+    $cha_gender=Read-Host -Prompt "Enter the gender of $cha_name ('male', 'female', or 'genderless' (robot))"
         if ($cha_gender -eq 'male') {
             $cha_gender_spec="He"
         }
@@ -15,7 +15,10 @@ if ($cha_itm_loc -eq 'character') {
             $cha_gender_spec="They"
         }
     $cha_species=Read-Host -Prompt "Enter the species name for $cha_name"
-    $cha_skin_fur=Read-Host -Prompt "Does $cha_name have skin or fur"
+        if ($cha_species -ne 'human') {
+            $cha_anthro=Read-Host -Prompt "Is $cha_name anthropomorphic ('yes', or 'no'.)"
+        }
+    $cha_skin_fur=Read-Host -Prompt "Does $cha_name have 'skin' or 'fur'"
     $cha_color=Read-Host -Prompt "Enter the $cha_skin_fur color of $cha_name"
     $cha_age=Read-Host -Prompt "Enter the age of $cha_name ('toddler', 'child', 'adolescent' (or 'teenager'), 'adult', or 'elder', or 'non-applicable' (robot))"
     $cha_height=Read-Host -Prompt "Enter the height of the character ('tiny', 'short', 'average' (for the species), 'tall', or 'giant')"
@@ -28,7 +31,7 @@ if ($cha_itm_loc -eq 'character') {
         #$cha_gender_pref=Read-Host -Prompt "Enter the gender the character prefers for a love interest ('male', 'female', or 'both')"
             #$cha_clothing=Read-Host -Prompt "Enter the gender the character prefers for a love interest ('male', 'female', or 'both')"
     New-Item "$cha_name (Character).txt" -ItemType File -Force
-    Write-Host "$cha_name is a $cha_age $cha_gender $cha_species, and has $cha_color $cha_skin_fur, along with $cha_hair_color $cha_skin_fur. $cha_gender_spec is $cha_height in height, and $cha_weight in weight."
+    Write-Host "$cha_name is a $cha_age $cha_gender $cha_species, and has $cha_color $cha_skin_fur, along with $cha_hair_color hair. $cha_gender_spec is $cha_height in height, and $cha_weight in weight."
 }
 
 if ($cha_itm_loc -eq 'item') {
