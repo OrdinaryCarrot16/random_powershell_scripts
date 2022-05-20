@@ -36,32 +36,32 @@ if ($cha_itm_loc -eq 'character') {
         $cha_likes=Read-Host -Prompt "Enter things $cha_name likes"
         $cha_dislikes=Read-Host -Prompt "Enter things $cha_name dislikes"
         $cha_fears=Read-Host -Prompt "Enter the things $cha_name is afraid of"
-        $cha_gender_pref=Read-Host -Prompt "Enter the gender $cha_name prefers for a love interest ('male', 'female', or 'both')"
-            if ($cha_gender -eq 'male' -and $cha_gender_pref -eq 'female') {
-                $cha_gender_pref="straight"
-            }
-            if ($cha_gender -eq 'male' -and $cha_gender_pref -eq 'male') {
-                $cha_gender_pref="gay"
-            }
-            if ($cha_gender -eq 'female' -and $cha_gender_pref -eq 'female') {
-                $cha_gender_pref="lesbian"
-            }
-            if ($cha_gender -eq 'male' -and $cha_gender_pref -eq 'both') {
-                $cha_gender_pref="bi-sexual"
-            }
-            if ($cha_gender -eq 'female' -and $cha_gender_pref -eq 'both') {
-            $cha_gender_pref="bi-sexual"
-            }
                 $cha_clothing_head=Read-Host -Prompt "What does the character wear on $cha_gender_spec2 head"
                 $cha_clothing_upper_body=Read-Host -Prompt "What does the character wear on $cha_gender_spec2 upper body"
                 $cha_clothing_lower_body=Read-Host -Prompt "What does the character wear on $cha_gender_spec2 lower body"
                 $cha_clothing_feet=Read-Host -Prompt "What does the character wear on $cha_gender_spec2 feet"
+                    $cha_gender_pref=Read-Host -Prompt "Enter the gender $cha_name prefers for a love interest ('male', 'female', or 'both')"
+                        if ($cha_gender -eq 'male' -and $cha_gender_pref -eq 'female') {
+                        $cha_gender_pref="straight"
+                        }
+                        if ($cha_gender -eq 'male' -and $cha_gender_pref -eq 'male') {
+                        $cha_gender_pref="gay"
+                        }
+                        if ($cha_gender -eq 'female' -and $cha_gender_pref -eq 'female') {
+                        $cha_gender_pref="lesbian"
+                        }
+                        if ($cha_gender -eq 'male' -and $cha_gender_pref -eq 'both') {
+                        $cha_gender_pref="bi-sexual"
+                        }
+                        if ($cha_gender -eq 'female' -and $cha_gender_pref -eq 'both') {
+                        $cha_gender_pref="bi-sexual"
+                        }
                     $cha_relationship=Read-Host -Prompt "Who is $cha_name dating (if anyone)"
                     $cha_family=Read-Host -Prompt "Who is in $cha_name's family (if anyone)"
                     $cha_friends=Read-Host -Prompt "Who are $cha_name's friends (if anyone)"
     #New-Item "$cha_name (Character).txt" -ItemType File -Force
     # Divided into: 1. Physical Appearance, 2. Clothing Appearance, 3. Personality, 4. Relationships, and 5. Biography & Housing.
-    Write-Host "$cha_name is a $cha_age $cha_gender $cha_species, and has $cha_color $cha_skin_fur, along with $cha_hair $cha_hair_color hair. $cha_gender_spec is $cha_height in height, and $cha_weight in weight.`n`n$cha_name wears a $cha_clothing_head on $cha_gender_spec2 head, a $cha_clothing_upper_body on $cha_gender_spec2 upper body, $cha_clothing_lower_body on $cha_gender_spec2 lower body, and $cha_shoe_color $cha_clothing_feet.`n`n$cha_name is generally $cha_personality, and they are $cha_traits as well. $cha_gender_spec likes $cha_likes, but dislikes $cha_dislikes. $cha_gender_spec is also afraid of $cha_fears.`n`n$cha_name is $cha_gender_pref, and is currently in a relationship with $cha_relationship. $cha_gender_spec2_c's family is: $cha_family; and $cha_gender_spec2 friends are: $cha_friends.`n`n"
+    Write-Host "$cha_name is a $cha_age $cha_gender $cha_species, and has $cha_color $cha_skin_fur, along with $cha_hair $cha_hair_color hair. $cha_gender_spec is $cha_height in height, and $cha_weight in weight.`n`n$cha_name wears a $cha_clothing_head on $cha_gender_spec2 head, a $cha_clothing_upper_body on $cha_gender_spec2 upper body, $cha_clothing_lower_body on $cha_gender_spec2 lower body, and $cha_clothing_feet.`n`n$cha_name is generally $cha_personality, and they are $cha_traits as well. $cha_gender_spec likes $cha_likes, but dislikes $cha_dislikes. $cha_gender_spec is also afraid of $cha_fears.`n`n$cha_name is $cha_gender_pref, and is currently in a relationship with $cha_relationship. $cha_gender_spec2_c's family is: $cha_family; and $cha_gender_spec2 friends are: $cha_friends.`n`n"
 }
 
 #if ($cha_itm_loc -eq 'item') {
